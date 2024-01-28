@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Payment form Elio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="card w-75 mx-auto my-5">
+      <div class="p-2 pb-0">
+        <form class="row g-3">
+          <div class="col-12 pt-2 pe-0 ps-0 container-fluid">
+            <div class="bg-light p-2 border rounded-top"><h1 class="card-title">Payment form example</h1></div>
+          </div>
+          <div class="bg-danger p-2 bg-opacity-25 m-0 p-0 rounded card col-12">
+            <h4>Some fields are missing</h4>
+          </div>
+          <!-- first row -->
+          <div class="col-md-5">
+            <label for="Card" class="form-label">Card #</label>
+            <input
+              type="text"
+              class="form-control"
+              id="card"
+              placeholder="xxxxxxxxxxxx"
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="CVC" class="form-label">CVC #</label>
+            <input
+              type="text"
+              class="form-control"
+              id="CVC"
+              placeholder="0000"
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="CVC" class="form-label">Amount</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">$</span>
+              <input
+                type="text"
+                class="form-control"
+                id="CVC"
+                placeholder="Amount"
+              />
+            </div>
+          </div>
+          <!-- second row -->
+          <div class="col-md-6">
+            <label for="first name" class="form-label">Fist Name</label>
+            <input type="text" class="form-control" id="fistname" />
+          </div>
+          <div class="col-md-6">
+            <label for="last name" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="fistname" />
+          </div>
+          <!-- third row -->
+          <div class="col-md-6">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" />
+          </div>
+          <div class="col-md-3">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="inputZip" class="form-label">Postal code</label>
+            <input type="text" class="form-control" id="inputZip" />
+          </div>
+            <!-- fourth row -->
+            <div class="col-md-auto">
+              <label for="inputState" class="form-label">We accept:</label>
+              <div class="form-check bg-secondary rounded p-2 ">
+                
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                  <i class="fa-brands fa-cc-visa"></i>
+                  </label>
+                </div>
+  
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="fa-brands fa-cc-mastercard"></i>
+                    </label>
+                  </div>
+  
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="fa-brands fa-cc-paypal"></i>
+                    </label>
+                  </div>
+  
+                  <div class="form-check form-check-inline ">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="fa-brands fa-cc-diners-club"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+             <div class="col-md-6 justify-content-md-end me-0 container-fluid">
+              <label for="exampleFormControlMessage" class="form-label">Message</label>
+              <textarea class="form-control" id="exampleFormControlMessage" rows="3"></textarea>
+                <label for="Message" class="form-label fs-6 fw-lighter text-muted">Add any notes here</label>
+             </div>
+            <!-- footer row -->
+             <div class="col-12 justify-content-md-end bg-light p-2 container-fluid border rounded-bottom">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                <button class="btn btn-primary" type="button">Send</button>
+            </div>
+           
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
